@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Мій блог</title>
+  </head>
+  <body>
+      <h1>Останні пости</h1>
+      {% for post in posts %}
+        <div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content|truncatechars:200 }}</p>
+            <p><em>Категорія: {{ post.category.name }}</em></p>
+            <hr>
+        </div>
+      {% empty %}
+          <p>Поки немає постів.</p>
+      {% endfor %}
+  </body>
+</html>

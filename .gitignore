@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Віртуальне оточення
+venv/
+env/
+ENV/
+
+# Django
+*.sqlite3
+db.sqlite3
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Логи
+*.log
+
+# Файли миграцій (опціонально)
+# blog/migrations/
+
+# Інші тимчасові файли
+*.swp
